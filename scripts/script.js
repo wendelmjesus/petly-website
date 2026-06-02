@@ -24,12 +24,12 @@ const rightArrow = document.querySelector(".banner-arrow-right");
 
 const banners = [
     {
-        image: "assets/images/banner-1.png",
+        image: "../assets/images/banner-1.png",
         alt: "Banner de Brinquedos",
         buttonText: "Confira nossos brinquedos"
     },
     {
-        image: "assets/images/banner-2.png",
+        image: "../assets/images/banner-2.png",
         alt: "Banner de Rações",
         buttonText: "Veja nossas rações"
     }
