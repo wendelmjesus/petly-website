@@ -78,3 +78,17 @@ leftArrow.addEventListener("click", () => {
 
     updateBanner(nextBanner);
 });
+
+const buyButtons = document.querySelectorAll(".buy-btn");
+
+buyButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.textContent = "Adicionado ao carrinho";
+        button.classList.add("added");
+
+        setTimeout(() => {
+            button.textContent = "Comprar";
+            button.classList.remove("added");
+        }, 2000);
+    });
+});
