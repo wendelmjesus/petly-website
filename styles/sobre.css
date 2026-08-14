@@ -1,0 +1,32 @@
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 40px 20px;
+}
+
+.sobre-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(37, 155, 177, 0.12);
+    width: 100%;
+    max-width: 800px;
+}
+
+.sobre-content h2 {
+    color: #61cfe5;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sobre-content p {
+    color: #259bb1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

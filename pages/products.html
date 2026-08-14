@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petly - Produtos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <a href="../pages/index.html">
+            <img class="logo" src="../assets/logo.svg" alt="Petly Logo">
+        </a>
+
+        <div class="nav-center">
+            <div class="menu">
+                <a href="../pages/index.html">Início</a>
+                <a href="../pages/products.html">Produtos</a>
+                <a href="../pages/sobre.html">Sobre</a>
+                <a href="../pages/servicos.html">Serviços</a>
+                <a href="../pages/contato.html">Contato</a>
+            </div>
+
+            <div class="search">
+                <button class="search-btn" aria-label="Pesquisar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#61cfe5" fill-rule="nonzero">
+                            <g transform="scale(10.66667,10.66667)">
+                                <path d="M13.26172,14.86719l2.48047,2.48047c-0.37891,0.72266 -0.41797,1.44141 -0.01953,1.83984l4.52734,4.52734c0.57031,0.57031 1.8125,0.25781 2.76563,-0.69922c0.95703,-0.95703 1.26953,-2.19531 0.69922,-2.76562l-4.52344,-4.52734c-0.40234,-0.39844 -1.12109,-0.35937 -1.84375,0.01563l-2.48047,-2.47656zM8.5,0c-4.69531,0 -8.5,3.80469 -8.5,8.5c0,4.69531 3.80469,8.5 8.5,8.5c4.69531,0 8.5,-3.80469 8.5,-8.5c0,-4.69531 -3.80469,-8.5 -8.5,-8.5zM8.5,15c-3.58984,0 -6.5,-2.91016 -6.5,-6.5c0,-3.58984 2.91016,-6.5 6.5,-6.5c3.58984,0 6.5,2.91016 6.5,6.5c0,3.58984 -2.91016,6.5 -6.5,6.5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+
+                <input class="search-input" type="text" placeholder="Pesquisar...">
+            </div>
+        </div>
+
+        <div class="account">
+            <a href="cart.html" class="cart-link">
+                <img src="../assets/icons/cart-icon.svg" alt="Carrinho">
+                <span id="cart-count">0</span>
+            </a>
+
+            <div class="profile-menu">
+                <button class="account-btn" aria-label="Conta">
+                    <img src="../assets/icons/account-icon.svg" alt="" class="account-icon">
+                </button>
+
+                <div class="account-menu">
+                    <a href="../pages/login.html">Entrar</a>
+                    <a href="../pages/register.html">Sou novo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="featured-products">
+            <div class="section-header">
+                <h2>Todos os produtos</h2>
+                <a href="#">Filtre por categoria</a>
+            </div>
+
+            <div class="product-list">
+                <article class="product-card" data-id="brinquedo-interativo">
+                    <img src="../assets/images/product-1.png" alt="Brinquedo interativo para cães">
+
+                    <div class="product-info">
+                        <h3>Brinquedo Interativo</h3>
+                        <p>Para cães ativos e curiosos</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 79,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="racao-premium">
+                    <img src="../assets/images/product-2.png" alt="Ração premium para gatos">
+
+                    <div class="product-info">
+                        <h3>Ração Premium</h3>
+                        <p>Nutrição completa para gatos</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 129,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="cama-confortavel">
+                    <img src="../assets/images/product-3.png" alt="Cama confortável para pets">
+
+                    <div class="product-info">
+                        <h3>Cama Confortável</h3>
+                        <p>Descanso macio para seu pet</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 199,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="kit-higiene">
+                    <img src="../assets/images/product-4.png" alt="Kit de higiene para cães">
+
+                    <div class="product-info">
+                        <h3>Kit de Higiene</h3>
+                        <p>Cuidado diário para cães</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 59,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="coleira-ajustavel">
+                    <img src="../assets/images/product-5.jpg" alt="Coleira ajustável azul para pets">
+
+                    <div class="product-info">
+                        <h3>Coleira Ajustável</h3>
+                        <p>Conforto e segurança no passeio</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 44,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="arranhador-gatos">
+                    <img src="../assets/images/product-6.jpg" alt="Arranhador compacto para gatos">
+
+                    <div class="product-info">
+                        <h3>Arranhador Compacto</h3>
+                        <p>Diversão e cuidado para gatos</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 149,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="bebedouro-automatico">
+                    <img src="../assets/images/product-7.jpg" alt="Bebedouro automático para pets">
+
+                    <div class="product-info">
+                        <h3>Bebedouro Automático</h3>
+                        <p>Água fresca durante todo o dia</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 89,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="casinha-moderna">
+                    <img src="../assets/images/product-8.jpg" alt="Casinha moderna para pets">
+
+                    <div class="product-info">
+                        <h3>Casinha Moderna</h3>
+                        <p>Abrigo aconchegante e resistente</p>
+
+                        <div class="product-footer">
+                            <strong>R$ 249,90</strong>
+                            <button type="button" class="buy-btn">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h2>Petly</h2>
+                <p>Cuidando do seu melhor amigo com carinho, qualidade e praticidade.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="../pages/index.html">Início</a>
+                <a href="../pages/products.html">Produtos</a>
+                <a href="../pages/servicos.html">Serviços</a>
+                <a href="../pages/contato.html">Contato</a>
+            </div>
+        </div>
+
+        <p class="footer-copy">Petly © 2026. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

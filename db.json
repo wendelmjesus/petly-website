@@ -1,0 +1,247 @@
+{
+    "store": {
+        "name": "Petly",
+        "currency": "BRL",
+        "supportEmail": "contato@petly.com",
+        "freeShippingFrom": 180,
+        "standardShipping": 19.9
+    },
+    "users": [
+        {
+            "id": "user-001",
+            "name": "Cliente Petly",
+            "email": "cliente@petly.com",
+            "password": "123456",
+            "phone": "(11) 99999-0000",
+            "role": "customer",
+            "createdAt": "2026-08-13T10:00:00-03:00",
+            "addresses": [
+                {
+                    "id": "address-001",
+                    "label": "Casa",
+                    "street": "Rua dos Pets",
+                    "number": "120",
+                    "district": "Centro",
+                    "city": "Sao Paulo",
+                    "state": "SP",
+                    "zipCode": "01000-000",
+                    "isDefault": true
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": "cat-toys",
+            "name": "Brinquedos",
+            "slug": "brinquedos",
+            "image": "../assets/images/toys.png"
+        },
+        {
+            "id": "cat-food",
+            "name": "Racoes",
+            "slug": "racoes",
+            "image": "../assets/images/raçao.png"
+        },
+        {
+            "id": "cat-beds",
+            "name": "Camas e casinhas",
+            "slug": "camas-casinhas",
+            "image": "../assets/images/product-3.png"
+        },
+        {
+            "id": "cat-hygiene",
+            "name": "Higiene",
+            "slug": "higiene",
+            "image": "../assets/images/higiene.png"
+        },
+        {
+            "id": "cat-accessories",
+            "name": "Acessorios",
+            "slug": "acessorios",
+            "image": "../assets/images/acessories.png"
+        }
+    ],
+    "products": [
+        {
+            "id": "brinquedo-interativo",
+            "name": "Brinquedo Interativo",
+            "description": "Para caes ativos e curiosos",
+            "categoryId": "cat-toys",
+            "species": ["dog"],
+            "price": 79.9,
+            "stock": 24,
+            "image": "../assets/images/product-1.png",
+            "featured": true,
+            "rating": 4.8,
+            "tags": ["energia", "enriquecimento", "diversao"]
+        },
+        {
+            "id": "racao-premium",
+            "name": "Racao Premium",
+            "description": "Nutricao completa para gatos adultos",
+            "categoryId": "cat-food",
+            "species": ["cat"],
+            "price": 129.9,
+            "stock": 18,
+            "image": "../assets/images/product-2.png",
+            "featured": true,
+            "rating": 4.9,
+            "tags": ["nutricao", "gatos", "premium"]
+        },
+        {
+            "id": "cama-confortavel",
+            "name": "Cama Confortavel",
+            "description": "Descanso macio para seu pet",
+            "categoryId": "cat-beds",
+            "species": ["dog", "cat"],
+            "price": 199.9,
+            "stock": 10,
+            "image": "../assets/images/product-3.png",
+            "featured": true,
+            "rating": 4.7,
+            "tags": ["descanso", "conforto", "lavavel"]
+        },
+        {
+            "id": "kit-higiene",
+            "name": "Kit de Higiene",
+            "description": "Cuidado diario para caes",
+            "categoryId": "cat-hygiene",
+            "species": ["dog"],
+            "price": 59.9,
+            "stock": 30,
+            "image": "../assets/images/product-4.png",
+            "featured": true,
+            "rating": 4.6,
+            "tags": ["banho", "escovacao", "cuidado"]
+        },
+        {
+            "id": "coleira-ajustavel",
+            "name": "Coleira Ajustavel",
+            "description": "Conforto e seguranca no passeio",
+            "categoryId": "cat-accessories",
+            "species": ["dog", "cat"],
+            "price": 44.9,
+            "stock": 42,
+            "image": "../assets/images/product-5.jpg",
+            "featured": false,
+            "rating": 4.5,
+            "tags": ["passeio", "seguranca", "ajustavel"]
+        },
+        {
+            "id": "arranhador-gatos",
+            "name": "Arranhador Compacto",
+            "description": "Diversao e cuidado para gatos",
+            "categoryId": "cat-toys",
+            "species": ["cat"],
+            "price": 149.9,
+            "stock": 12,
+            "image": "../assets/images/product-6.jpg",
+            "featured": false,
+            "rating": 4.8,
+            "tags": ["gatos", "arranhador", "bem-estar"]
+        },
+        {
+            "id": "bebedouro-automatico",
+            "name": "Bebedouro Automatico",
+            "description": "Agua fresca durante todo o dia",
+            "categoryId": "cat-accessories",
+            "species": ["dog", "cat"],
+            "price": 89.9,
+            "stock": 16,
+            "image": "../assets/images/product-7.jpg",
+            "featured": false,
+            "rating": 4.7,
+            "tags": ["hidratacao", "automatico", "rotina"]
+        },
+        {
+            "id": "casinha-moderna",
+            "name": "Casinha Moderna",
+            "description": "Abrigo aconchegante e resistente",
+            "categoryId": "cat-beds",
+            "species": ["dog", "cat"],
+            "price": 249.9,
+            "stock": 7,
+            "image": "../assets/images/product-8.jpg",
+            "featured": false,
+            "rating": 4.9,
+            "tags": ["abrigo", "conforto", "resistente"]
+        }
+    ],
+    "services": [
+        {
+            "id": "service-bath",
+            "name": "Banho e tosa",
+            "description": "Higiene completa com produtos seguros para pets.",
+            "priceFrom": 59.9,
+            "durationMinutes": 90
+        },
+        {
+            "id": "service-checkup",
+            "name": "Check-up preventivo",
+            "description": "Avaliacao basica para acompanhar a saude do pet.",
+            "priceFrom": 89.9,
+            "durationMinutes": 45
+        },
+        {
+            "id": "service-walk",
+            "name": "Passeio assistido",
+            "description": "Passeios com acompanhamento para gastar energia com seguranca.",
+            "priceFrom": 39.9,
+            "durationMinutes": 40
+        }
+    ],
+    "orders": [
+        {
+            "id": "order-001",
+            "userId": "user-001",
+            "status": "paid",
+            "items": [
+                {
+                    "productId": "brinquedo-interativo",
+                    "quantity": 1,
+                    "unitPrice": 79.9
+                },
+                {
+                    "productId": "kit-higiene",
+                    "quantity": 1,
+                    "unitPrice": 59.9
+                }
+            ],
+            "subtotal": 139.8,
+            "shipping": 19.9,
+            "total": 159.7,
+            "paymentMethod": "credit_card",
+            "createdAt": "2026-08-13T11:30:00-03:00"
+        }
+    ],
+    "paymentMethods": [
+        {
+            "id": "credit_card",
+            "name": "Cartao de credito",
+            "enabled": true,
+            "installments": 6
+        },
+        {
+            "id": "pix",
+            "name": "Pix",
+            "enabled": true,
+            "discountPercent": 5
+        },
+        {
+            "id": "debit_card",
+            "name": "Cartao de debito",
+            "enabled": true
+        }
+    ],
+    "coupons": [
+        {
+            "id": "coupon-001",
+            "code": "PETLY10",
+            "type": "percent",
+            "value": 10,
+            "minimumSubtotal": 120,
+            "active": true
+        }
+    ]
+}

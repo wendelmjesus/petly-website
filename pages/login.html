@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petly - Login</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+
+    <nav class="header">
+        <a href="../pages/index.html">
+            <img class="logo" src="../assets/logo.svg" alt="Petly Logo">
+        </a>
+
+        <div class="nav-center">
+            <div class="menu">
+                <a href="../pages/index.html">Início</a>
+                <a href="../pages/products.html">Produtos</a>
+                <a href="../pages/sobre.html">Sobre</a>
+                <a href="../pages/servicos.html">Serviços</a>
+                <a href="../pages/contato.html">Contato</a>
+            </div>
+
+            <div class="search">
+
+                <button class="search-btn" aria-label="Pesquisar">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#61cfe5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M13.26172,14.86719l2.48047,2.48047c-0.37891,0.72266 -0.41797,1.44141 -0.01953,1.83984l4.52734,4.52734c0.57031,0.57031 1.8125,0.25781 2.76563,-0.69922c0.95703,-0.95703 1.26953,-2.19531 0.69922,-2.76562l-4.52344,-4.52734c-0.40234,-0.39844 -1.12109,-0.35937 -1.84375,0.01563l-2.48047,-2.47656zM8.5,0c-4.69531,0 -8.5,3.80469 -8.5,8.5c0,4.69531 3.80469,8.5 8.5,8.5c4.69531,0 8.5,-3.80469 8.5,-8.5c0,-4.69531 -3.80469,-8.5 -8.5,-8.5zM8.5,15c-3.58984,0 -6.5,-2.91016 -6.5,-6.5c0,-3.58984 2.91016,-6.5 6.5,-6.5c3.58984,0 6.5,2.91016 6.5,6.5c0,3.58984 -2.91016,6.5 -6.5,6.5z"></path></g></g>
+                    </svg>
+                </button>
+
+                <input class="search-input" type="text" placeholder="Pesquisar...">
+
+            </div>
+
+        </div>
+
+        <div class="account">
+            <a href="cart.html" class="cart-link" aria-label="Carrinho">
+                <img src="../assets/icons/cart-icon.svg" alt="">
+                <span id="cart-count">0</span>
+            </a>
+
+            <div class="profile-menu">
+                <button class="account-btn" aria-label="Conta">
+                    <img src="../assets/icons/account-icon.svg" alt="" class="account-icon">
+                </button>
+
+                <div class="account-menu">
+                    <a href="../pages/login.html">Entrar</a>
+                    <a href="../pages/register.html">Sou novo</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Acesse sua conta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+            <p class="register-link">Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h2>Petly</h2>
+                <p>Cuidando do seu melhor amigo com carinho, qualidade e praticidade.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="../pages/index.html">Início</a>
+                <a href="../pages/products.html">Produtos</a>
+                <a href="../pages/servicos.html">Serviços</a>
+                <a href="../pages/contato.html">Contato</a>
+            </div>
+        </div>
+
+        <p class="footer-copy">Petly © 2026. Todos os direitos reservados.</p>
+    </footer>
+
+<script src="../scripts/script.js"></script>
+<script src="../scripts/login.js"></script>
+
+</body>
+
+
+</html>
