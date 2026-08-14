@@ -62,9 +62,3 @@ Senha: 123456
 
 Este projeto é um estudo front-end. O pagamento, o cadastro e o banco de dados são simulações locais, sem backend real ou processamento de compra.
 
-## Próximos Passos
-
-- Renderizar produtos diretamente a partir do `db.json`.
-- Criar filtros reais por categoria.
-- Melhorar autenticação com backend.
-- Adicionar testes e validação mais completa dos formulários.
