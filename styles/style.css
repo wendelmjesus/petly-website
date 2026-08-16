@@ -403,6 +403,14 @@
     padding: 16px;
 }
 
+.product-number {
+    display: inline-flex;
+    color: #ffc400;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
 .product-info h3 {
     color: #61cfe5;
     font-size: 18px;
@@ -415,6 +423,15 @@
     font-size: 14px;
     font-weight: 600;
     margin-top: 8px;
+    line-height: 1.45;
+}
+
+.product-stock {
+    display: block;
+    color: #259bb1;
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 10px;
 }
 
 .product-footer {
