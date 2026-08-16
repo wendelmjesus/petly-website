@@ -314,3 +314,35 @@ if (paymentForm) {
         renderCartPage();
     });
 }
+
+const appointmentForm = document.querySelector("#appointment-form");
+const appointmentMessage = document.querySelector("#appointment-message");
+
+function getAppointments() {
+    return JSON.parse(localStorage.getItem("appointments")) || [];
+}
+
+if (appointmentForm) {
+    appointmentForm.addEventListener("submit", event => {
+        event.preventDefault();
+
+        const formData = new FormData(appointmentForm);
+        const appointment = {
+            id: Date.now(),
+            guardian: formData.get("guardian"),
+            pet: formData.get("pet"),
+            service: formData.get("service"),
+            date: formData.get("date"),
+            time: formData.get("time"),
+            phone: formData.get("phone")
+        };
+        const appointments = [appointment, ...getAppointments()].slice(0, 8);
+
+        localStorage.setItem("appointments", JSON.stringify(appointments));
+        appointmentForm.reset();
+
+        if (appointmentMessage) {
+            appointmentMessage.textContent = "Agendamento criado com sucesso!";
+        }
+    });
+}

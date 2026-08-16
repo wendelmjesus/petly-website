@@ -20,7 +20,7 @@
                 <a href="../pages/index.html">Início</a>
                 <a href="../pages/products.html">Produtos</a>
                 <a href="../pages/sobre.html">Sobre</a>
-                <a href="../pages/servicos.html">Serviços</a>
+                <a href="../pages/servicos.html#agendamento">Agendamento</a>
                 <a href="../pages/contato.html">Contato</a>
             </div>
 
@@ -60,24 +60,77 @@
 
     <div class="servicos-container">
         <div class="servicos-content">
-            <h2>Nossos Serviços</h2>
-            <div class="servicos-list">
-                <div class="servico-card">
-                    <h3>Banho e Tosa</h3>
-                    <p>Deixe seu pet limpinho e cheiroso com nossos serviços de banho e tosa. Utilizamos produtos de alta qualidade e temos profissionais especializados para cuidar do seu melhor amigo.</p>
-                </div>
-                <div class="servico-card">
-                    <h3>Consulta Veterinária</h3>
-                    <p>Oferecemos consultas veterinárias para garantir a saúde e o bem-estar do seu pet. Nossos veterinários são experientes e estão prontos para atender qualquer necessidade.</p>
-                </div>
-                <div class="servico-card">
-                    <h3>Adestramento</h3>
-                    <p>Temos programas de adestramento para cães de todas as idades e portes. Nossos adestradores utilizam técnicas de reforço positivo para ensinar bons comportamentos.</p>
-                </div>
-                <div class="servico-card">
-                    <h3>Pet Sitter</h3>
-                    <p>Vai viajar e não tem com quem deixar seu pet? Oferecemos o serviço de pet sitter para cuidar do seu animal de estimação com todo o carinho e atenção que ele merece.</p>
-                </div>
+            <div class="servicos-layout">
+                <section class="agendamento-servicos" id="agendamento">
+                    <h2>Agendar Serviço</h2>
+
+                    <form id="appointment-form" class="appointment-form">
+                        <div class="appointment-row">
+                            <label>
+                                Tutor
+                                <input type="text" name="guardian" placeholder="Seu nome" required>
+                            </label>
+
+                            <label>
+                                Pet
+                                <input type="text" name="pet" placeholder="Nome do pet" required>
+                            </label>
+                        </div>
+
+                        <label>
+                            Serviço
+                            <select name="service">
+                                <option>Banho e Tosa</option>
+                                <option>Consulta Veterinária</option>
+                                <option>Adestramento</option>
+                                <option>Pet Sitter</option>
+                            </select>
+                        </label>
+
+                        <div class="appointment-row">
+                            <label>
+                                Data
+                                <input type="date" name="date" required>
+                            </label>
+
+                            <label>
+                                Horário
+                                <input type="time" name="time" required>
+                            </label>
+                        </div>
+
+                        <label>
+                            Telefone
+                            <input type="text" name="phone" placeholder="(00) 00000-0000" required>
+                        </label>
+
+                        <button type="submit">Agendar serviço</button>
+                        <p id="appointment-message" class="appointment-message" aria-live="polite"></p>
+                    </form>
+                </section>
+
+                <section class="servicos-panel" aria-label="Nossos serviços">
+                    <h2>Nossos Serviços</h2>
+
+                    <div class="servicos-list">
+                        <div class="servico-card">
+                            <h3>Banho e Tosa</h3>
+                            <p>Deixe seu pet limpinho e cheiroso com nossos serviços de banho e tosa.</p>
+                        </div>
+                        <div class="servico-card">
+                            <h3>Consulta Veterinária</h3>
+                            <p>Consultas para garantir a saúde e o bem-estar do seu pet.</p>
+                        </div>
+                        <div class="servico-card">
+                            <h3>Adestramento</h3>
+                            <p>Programas com reforço positivo para cães de todas as idades.</p>
+                        </div>
+                        <div class="servico-card">
+                            <h3>Pet Sitter</h3>
+                            <p>Cuidado com carinho e atenção quando você precisar viajar.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -92,7 +145,7 @@
             <div class="footer-links">
                 <a href="../pages/index.html">Início</a>
                 <a href="../pages/products.html">Produtos</a>
-                <a href="../pages/servicos.html">Serviços</a>
+                <a href="../pages/servicos.html#agendamento">Agendamento</a>
                 <a href="../pages/contato.html">Contato</a>
             </div>
         </div>
