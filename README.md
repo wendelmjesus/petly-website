@@ -77,11 +77,3 @@ The `database/` folder includes SQL files for a future backend implementation:
 ## 📝 Notes
 
 This is a front-end study project. Payments, authentication, appointments, and database operations are local simulations and do not process real transactions.
-
-## 🛣️ Next Steps
-
-- Render products directly from `db.json`.
-- Add real category filters.
-- Connect the SQL database to a backend.
-- Improve authentication with a real server.
-- Add stronger form validation and automated tests.
