@@ -1,35 +1,37 @@
-# Petly
+# 🐾 Petly
 
-Petly é um projeto front-end fictício de pet shop, criado para praticar React, HTML, CSS, JavaScript e modelagem SQL em uma experiência com múltiplas páginas. O foco é apresentar uma interface amigável para produtos, serviços, carrinho e contato.
+Petly is a fictional pet shop front-end project built to practice React, HTML, CSS, JavaScript, and SQL database modeling across a multi-page shopping experience.
 
-## Visão Geral
+The goal is to provide a friendly interface for browsing pet products, managing a cart, scheduling services, and simulating checkout flows.
 
-O projeto simula uma loja/serviço para pets com navegação entre páginas, catálogo de produtos, carrinho usando `localStorage`, pagamento demonstrativo e um arquivo `db.json` usado como base de dados mock.
+## ✨ Overview
 
-## Funcionalidades
+Petly simulates a pet store and service platform with page navigation, a product catalog, a `localStorage` cart, demo payment flow, mock data through `db.json`, and SQL files prepared for a future backend.
 
-- Página inicial em React com banner, categorias, produtos em destaque, dicas e benefícios.
-- Página de produtos com cards, imagens, código do produto, descrição, estoque, busca por nome e botão de compra.
-- Carrinho com itens agrupados, alteração de quantidade, remoção, subtotal, frete e total.
-- Interface de pagamento simulada.
-- Páginas de login e cadastro com leitura do `db.json`.
-- Página sobre, agendamento de serviços e contato.
-- Banco de dados mock com produtos, categorias, usuários, serviços, pedidos, cupons e métodos de pagamento.
-- Banco de dados SQL com tabelas para cadastro, endereços, produtos, estoque, compras, pagamentos, cupons e agendamentos.
-- Layout responsivo para desktop e mobile.
+## 🚀 Features
 
-## Tecnologias
+- 🏠 React home page with banner, categories, featured products, tips, and benefits.
+- 🛍️ Products page with images, product codes, descriptions, stock quantity, search by name, and buy buttons.
+- 🛒 Cart with grouped items, quantity controls, item removal, subtotal, shipping, and total.
+- 💳 Simulated payment interface.
+- 🔐 Login and registration pages using mock data from `db.json`.
+- 📅 Service scheduling page with local appointment persistence.
+- 📦 Mock database with products, categories, users, services, orders, coupons, and payment methods.
+- 🗄️ SQL database schema for users, addresses, products, inventory, orders, payments, coupons, and appointments.
+- 📱 Responsive layout for desktop and mobile.
+
+## 🧰 Technologies
 
 - HTML5
 - CSS3
 - JavaScript
 - React
 - Vite
-- JSON como banco mock
+- JSON mock database
 - SQL
-- LocalStorage para persistência do carrinho
+- LocalStorage
 
-## Estrutura
+## 📁 Project Structure
 
 ```text
 pet-project/
@@ -56,33 +58,30 @@ pet-project/
 └── README.md
 ```
 
-## Como Rodar
+## 🔑 Mock Login
 
-Instale as dependências e rode o servidor de desenvolvimento:
-
-```bash
-npm install
-npm run dev
-```
-
-Depois abra a URL exibida pelo Vite.
-
-Para testar login com os dados mock:
+Use this mock account to test the login flow:
 
 ```text
-E-mail: cliente@petly.com
-Senha: 123456
+Email: cliente@petly.com
+Password: 123456
 ```
 
-## Observações
+## 🗄️ Database
 
-Este projeto é um estudo front-end. O pagamento, o cadastro e o banco de dados são simulações locais, sem backend real ou processamento de compra.
+The `database/` folder includes SQL files for a future backend implementation:
 
-Os arquivos em `database/` trazem uma estrutura SQL pronta para evoluir o projeto com backend. Use `schema.sql` para criar as tabelas e `seed.sql` para inserir dados iniciais.
+- `schema.sql`: creates the relational database structure.
+- `seed.sql`: inserts starter data for products, inventory, users, services, and coupons.
 
-## Próximos Passos
+## 📝 Notes
 
-- Renderizar produtos diretamente a partir do `db.json`.
-- Criar filtros reais por categoria.
-- Melhorar autenticação com backend.
-- Adicionar testes e validação mais completa dos formulários.
+This is a front-end study project. Payments, authentication, appointments, and database operations are local simulations and do not process real transactions.
+
+## 🛣️ Next Steps
+
+- Render products directly from `db.json`.
+- Add real category filters.
+- Connect the SQL database to a backend.
+- Improve authentication with a real server.
+- Add stronger form validation and automated tests.
