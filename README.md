@@ -1,31 +1,30 @@
-# Petly
+# 🐾 Petly
 
-Petly é um projeto front-end fictício de pet shop, criado para praticar HTML, CSS e JavaScript em uma experiência com múltiplas páginas. O foco é apresentar uma interface amigável para produtos, serviços, carrinho e contato.
+**Petly** is a fictional pet shop website built as a front-end development project using HTML, CSS, and JavaScript.
 
-## Visão Geral
+The project focuses on creating a responsive multi-page shopping experience while practicing interface development, DOM manipulation, local data management, and basic e-commerce concepts.
 
-O projeto simula uma loja/serviço para pets com navegação entre páginas, catálogo de produtos, carrinho usando `localStorage`, pagamento demonstrativo e um arquivo `db.json` usado como base de dados mock.
+## Features
 
-## Funcionalidades
+- 🏠 Home page with featured products, categories, tips, and promotional content
+- 🛍️ Product catalog with search functionality
+- 🛒 Shopping cart with quantity controls and item removal
+- 💰 Automatic subtotal, shipping, and total calculations
+- 💳 Simulated checkout experience
+- 👤 Login and registration interfaces
+- 🐶 Services and pet-related content
+- 📱 Responsive layout for desktop and mobile
+- 💾 Shopping cart persistence using LocalStorage
 
-- Página inicial com banner, categorias, produtos em destaque, dicas e benefícios.
-- Página de produtos com cards, imagens, busca por nome e botão de compra.
-- Carrinho com itens agrupados, alteração de quantidade, remoção, subtotal, frete e total.
-- Interface de pagamento simulada.
-- Páginas de login e cadastro com leitura do `db.json`.
-- Página sobre, serviços e contato.
-- Banco de dados mock com produtos, categorias, usuários, serviços, pedidos, cupons e métodos de pagamento.
-- Layout responsivo para desktop e mobile.
+## Tech Stack
 
-## Tecnologias
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **JSON** — Mock data
+- **LocalStorage** — Cart persistence
 
-- HTML5
-- CSS3
-- JavaScript
-- JSON como banco mock
-- LocalStorage para persistência do carrinho
-
-## Estrutura
+## Project Structure
 
 ```text
 pet-project/
@@ -45,20 +44,3 @@ pet-project/
 ├── styles/
 ├── db.json
 └── README.md
-```
-
-## Como Rodar
-
-Abra o arquivo `pages/index.html` no navegador.
-
-Para testar login com os dados mock:
-
-```text
-E-mail: cliente@petly.com
-Senha: 123456
-```
-
-## Observações
-
-Este projeto é um estudo front-end. O pagamento, o cadastro e o banco de dados são simulações locais, sem backend real ou processamento de compra.
-
